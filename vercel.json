@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/restaurant.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/restaurant/(.*)", "dest": "/api/restaurant.py" }
+  ]
+}
